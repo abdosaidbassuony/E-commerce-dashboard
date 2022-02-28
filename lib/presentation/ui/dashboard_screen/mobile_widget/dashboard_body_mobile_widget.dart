@@ -1,21 +1,17 @@
+import 'package:admin_panel/presentation/ui/dashboard_screen/mobile_widget/admin_details_mobile_widget.dart';
+import 'package:admin_panel/presentation/ui/dashboard_screen/mobile_widget/dashboard_details_mobile_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'package:admin_panel/presentation/ui/mobile_ui/dashboard_screen/widget/admin_details_widget.dart';
-import 'package:admin_panel/presentation/ui/mobile_ui/dashboard_screen/widget/dashboard_details_widget.dart';
-
-class DashboardBodyWidget extends StatelessWidget {
+class DashboardBodyMobileWidget extends StatelessWidget {
   final String? totalOrders;
 
   final String? numberOfReturn;
 
   final String? averagePrice;
 
-  const DashboardBodyWidget({
-    Key? key,
-    this.totalOrders,
-    this.averagePrice,
-    this.numberOfReturn,
-  }) : super(key: key);
+  const DashboardBodyMobileWidget(
+      {Key? key, this.averagePrice, this.numberOfReturn, this.totalOrders})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +23,11 @@ class DashboardBodyWidget extends StatelessWidget {
           margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
           child: Column(
             children: [
-              const AdminDetailsWidget(),
+              const AdminDetailsMobileWidget(),
               const SizedBox(height: 8),
               const Divider(thickness: 2),
               const SizedBox(height: 30),
-              DashboardDetailsWidget(
+              DashboardDetailsMobileWidget(
                   numberOfReturn: numberOfReturn,
                   averagePrice: averagePrice,
                   totalOrders: totalOrders),

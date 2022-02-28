@@ -1,13 +1,12 @@
+import 'package:admin_panel/presentation/ui/dashboard_screen/mobile_widget/status_card_mobile_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'package:admin_panel/presentation/ui/mobile_ui/dashboard_screen/widget/status_card_widget.dart';
-
-class TotalOrderAndTotalReturnsWidget extends StatelessWidget {
+class TotalOrderAndTotalReturnsMobileWidget extends StatelessWidget {
   final String? totalOrders;
 
   final String? numberOfReturn;
 
-  const TotalOrderAndTotalReturnsWidget(
+  const TotalOrderAndTotalReturnsMobileWidget(
       {Key? key, this.numberOfReturn, this.totalOrders})
       : super(key: key);
 
@@ -16,13 +15,13 @@ class TotalOrderAndTotalReturnsWidget extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: StatusCardWidget(
+          child: StatusCardMobileWidget(
             statusTitle: "Total Orders",
             statusValue: "${totalOrders!} Orders",
           ),
         ),
         Expanded(
-          child: StatusCardWidget(
+          child: StatusCardMobileWidget(
             statusTitle: "Total Returns",
             statusValue: "${numberOfReturn!} Orders",
           ),

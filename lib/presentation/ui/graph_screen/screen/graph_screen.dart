@@ -1,9 +1,9 @@
+import 'package:admin_panel/presentation/ui/graph_screen/widget/graph_screen_body_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:admin_panel/presentation/bloc/dashboard_bloc/dashboard_bloc.dart';
-import 'package:admin_panel/presentation/ui/mobile_ui/graph_screen/widget/graph_screen_body_widget.dart';
 
 class GraphScreen extends StatefulWidget {
   const GraphScreen({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _GraphScreenState extends State<GraphScreen> {
         }
       },
       builder: (context, state) {
-        return GraphScreenBodyWidget();
+        return const GraphScreenBodyWidget();
       },
     );
   }

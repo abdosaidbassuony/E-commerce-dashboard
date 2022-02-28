@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
 
-class StatusCardWidget extends StatelessWidget {
+class StatusCardMobileWidget extends StatelessWidget {
   final String? statusTitle;
   final String? statusValue;
   final double? titleTextSize;
   final double? valueTextSize;
+  final double? height;
+  final double? width;
   final bool? isIcon;
   final Function? onTap;
 
-  const StatusCardWidget(
+  const StatusCardMobileWidget(
       {Key? key,
       this.statusTitle,
       this.statusValue,
       this.titleTextSize = 24,
       this.valueTextSize = 16,
       this.onTap,
-      this.isIcon = false})
+      this.isIcon = false,
+      this.height,
+      this.width})
       : super(key: key);
 
   @override

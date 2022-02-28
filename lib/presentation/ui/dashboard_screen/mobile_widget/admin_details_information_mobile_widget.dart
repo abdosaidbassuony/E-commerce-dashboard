@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AdminDetailsInformationWidget extends StatelessWidget {
-  const AdminDetailsInformationWidget({Key? key}) : super(key: key);
+class AdminDetailsInformationMobileWidget extends StatelessWidget {
+  const AdminDetailsInformationMobileWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

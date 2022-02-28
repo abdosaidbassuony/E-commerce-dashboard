@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:admin_panel/injector.dart';
 import 'package:admin_panel/presentation/bloc/dashboard_bloc/dashboard_bloc.dart';
-import 'package:admin_panel/presentation/ui/mobile_ui/dashboard_screen/screen/dashboard_screen.dart';
+import 'package:admin_panel/presentation/ui/dashboard_screen/dashboard_screen.dart';
 
 void main() async {
   await initializeDependencies();
